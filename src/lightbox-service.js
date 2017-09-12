@@ -270,6 +270,7 @@ angular.module('bootstrapLightbox').provider('Lightbox', function () {
       Lightbox.modalInstance.result['finally'](function () {
         // prevent the lightbox from flickering from the old image when it gets
         // opened again
+		Lightbox.lastIndex = Lightbox.index;
         Lightbox.images = [];
         Lightbox.index = 1;
         Lightbox.image = {};
