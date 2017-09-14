@@ -718,7 +718,7 @@ angular.module('bootstrapLightbox').directive('lightboxSrc', ['$window',
           resize();
 
           // the src attribute applies to `<video>` and not `<embed-video>`
-          element[0].src = src;
+          element[0]['http-src'] = src;
         }
       });
 
